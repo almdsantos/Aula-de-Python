@@ -31,7 +31,7 @@ if (len(cpf) == 11):
     verificador1 = str(verificador1)
     verificador2 = str(verificador2)
     
-    if ((verificador1[1] == cpf[9]) and (verificador2 == cpf[10])) or ((verificador1 == cpf[9]) and (verificador2 == cpf[10])):
+    if ((verificador1 == cpf[9]) and (verificador2 == cpf[10])) or ((verificador1[1] == cpf[9]) and (verificador2 == cpf[10])):
         print("CPF Válido")
         
     else:
