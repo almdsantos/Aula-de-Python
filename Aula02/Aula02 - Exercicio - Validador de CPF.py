@@ -28,14 +28,7 @@ if (len(cpf) == 11):
     v30 = int(cpf[9]) * 2
     verificador2 = ((v21+v22+v23+v24+v25+v26+v27+v28+v29+v30) * 10) % 11
     
-    verificador1 = str(verificador1)
-    verificador2 = str(verificador2)
-    
-    if ((verificador1 == cpf[9]) and (verificador2 == cpf[10])) or ((verificador1[1] == cpf[9]) and (verificador2 == cpf[10])):
-        print("CPF Válido")
-        
+    if (verificador1 == int(cpf[9])) and (verificador2 == int(cpf[10])):
+        print("O CPF é válido")
     else:
-        print("CPF não é válido")
-        
-else:
-    print("Digite um numero válido")
+        print("O CPF não é válido")
